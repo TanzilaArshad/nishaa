@@ -1,0 +1,35 @@
+#parent{
+ border: 1px solid black;
+ width: 800px;
+ height: 500px;
+ background-color: #eee;
+ display: grid;
+ grid-template-columns: repeat(3 200px);
+ grid-template-rows: 150px 150px 200px;
+ /*gap fpr both equall also grid-gap*/
+ grid-row-gap:10px;
+ grid-column-gap: 10px;
+}
+.class1{
+    background-color: aqua;
+}
+.class2{
+    background-color: rgb(35, 43, 43);
+}
+
+.class3{
+    background-color: rgb(112, 26, 69);
+}
+
+.class4{
+    background-color: rgb(211, 83, 250);
+}
+
+.class5{
+    background-color: rgb(255, 145, 0);
+}
+
+.class6{
+    background-color: rgb(255, 0, 0);
+}
+

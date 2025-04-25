@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .app{
+     margin-top: 140px;
+    }
+      
+    body{ 
+    text-align: center;
+    }
+    h2{
+    color: #333; 
+    }
+    input, button{ 
+    margin: 10px;
+    padding: 8px; 
+    }
+    </style>
+</head>
+<body>
+    <div class="app"> 
+        <h2>Weather App</h2>
+        <input type="text" id="cityInput" placeholder="Enter city name"><br>
+        <button onclick="getWeather()">Get Weather</button>
+    </div>
+  
+    
+    <!-- fetch()
+    then()
+    catch()
+    make weather app with them
+    open weather website give api -->
+
+    <script>
+        //200 means ok on server
+     function getWeather() {
+    let city = document.getElementById("cityInput").value;
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=039121f727dd5eca0b1fff80370842e3`)
+    .then(res => res.json()).then(data =>console.log(data ))
+    .catch(() => console.log ("City not found"));
+}
+    </script>
+</body>
+</html>

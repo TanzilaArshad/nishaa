@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /* media queries
+        for all type
+        1-all
+        for us we will use it
+        2-screen
+        320px t0 480px for  extra-small devices
+        481px to 767px for small devices modern phones
+        768px tp 1024px for medium screens tablets etc
+        1025px to 1440px for large screen laptops etc
+        1441px to so on for extra lage like bg lcds
+        rules:
+        only optional
+        and compulsory btw conditions
+        @media only screen and (min-width:481px) and (max-width:767px)
+        {
+
+        }
+        for print
+        3-print
+        for special person
+        4-speech */
+        #one{
+                background-color: rgb(52, 54, 54);
+                height: 100px;
+                width: 100px;
+            }
+            #two{
+                background-color: rgb(15, 15, 14);
+                height: 100px;
+                width: 100px;
+            }
+            #three{
+                background-color: rgb(29, 28, 28);
+                height: 100px;
+                width: 100px;
+            }
+            #four{
+                background-color: rgb(53, 12, 99);
+                height: 100px;
+                width: 100px;
+            }
+
+
+
+        @media only screen and (min-width:320px) and (max-width:480px)
+        {
+            #one{
+                background-color: aqua;
+                height: 200px;
+                width: 200px;
+            }
+
+        }
+        @media only screen and (min-width:481px) and (max-width:767px)
+        {
+            #two{
+                background-color: rgb(128, 151, 22);
+                height: 100px;
+                width: 100px;
+            }
+
+        }
+        @media only screen and (min-width:768px) and (max-width:1024px)
+        {
+            #three{
+                background-color: rgb(131, 32, 90);
+                height: 100px;
+                width: 100px;
+            }
+
+        }   
+    
+    </style>
+</head>
+<body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+    <div id="five"></div>
+</body>
+</html>

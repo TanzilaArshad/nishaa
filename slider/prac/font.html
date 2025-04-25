@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1{
+            width: 100px;
+            height: 100px;
+            font-size: 10px;
+            background-color: green;
+            border: 1px solid black;
+        }
+        #box2{
+            /* child will see parent if % if px then he never see his parent */
+            height: 50px;
+            /* width: 50%; */
+            /* root element it witll acc to hml like by default 16 16*4 */
+            width: 4rem;
+            /* child will change font size acc tp parent likr 10*2em when in em */
+            font-size: 2em;
+            background-color: yellow;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="box1">box1
+        <div id="box2">box2</div>
+    </div>
+    
+</body>
+</html>

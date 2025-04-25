@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .box{
+    width: 400px;
+    border: 1px solid black;
+    min-height: 200px;
+    background-color: brown;
+    /*for blurring*/
+    opacity: 0.1;
+  }

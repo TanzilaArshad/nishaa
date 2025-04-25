@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //     var num=prompt();
+    //     if(num%2==0){
+    //         document.write("Even number");
+    //     }
+    //    else if(num%2!=0){
+    //         document.write("odd number");
+    //     }
+    //     else{
+    //         document.write("nothing"); 
+    //     }
+    // it will also loop the table head
+    // var a=["banana", "grapes", "mango", "oranges", "apple"];
+    //     for(var b=0; b<a.length; b++)
+    //     {
+    //         document.write("<table>");
+    //         document.write("<tr>");
+    //         document.write("<th>index</th>");
+    //         document.write("<th>value</th>");
+    //         document.write("</tr>");
+    //         document.write("<tr>");
+    //         document.write("<td>"+b+"</td>");
+    //         document.write("<td>"+a[b]+"</td>");
+    //         document.write("</tr>");
+    //         document.write("</table>");
+          
+    //     }
+    var a=["banana", "grapes", "mango", "oranges", "apple"];
+    document.write("<table>");
+            document.write("<tr>");
+             document.write("<th>index</th>");
+            document.write("<th>value</th>");
+            document.write("</tr>");
+         for(var b=0; b<a.length; b++)
+         {
+             
+             document.write("<tr>");
+             document.write("<td>"+b+"</td>");
+             document.write("<td>"+a[b]+"</td>");
+             document.write("</tr>");  
+        }
+        document.write("</table>");
+        // var a = prompt();
+        // for(var b=1; b<=10; b++){
+        //     document.write(a+"*"+b +"="+a*b);//we can also use , instead of +
+        //     document.write("<br>");
+        // }
+        
+        // var a = prompt();
+        // for(var b=1; b<=10; b++){
+        //     document.write(a,"*",b ,"=",a*b);//we can also use , instead of +
+        //     document.write("<br>");
+        // }
+    </script>
+</body>
+</html>

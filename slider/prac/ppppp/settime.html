@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one{
+            height: 150px;
+            width: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+   <!-- <div id="one">
+
+   </div>
+   <button id="two">Stop</button>
+   <h1 id="three"></h1> -->
+   <span id="hr">00</span>
+   <span id="mint">00</span>
+   <span id="sec">00</span>
+   <span id="ms">00</span><br>
+   <button id="btn1">start</button>
+   <button id="btn2">stop</button>
+   <button id="btn3">reset</button>
+    <script>
+    //    let one= document.getElementById("one");
+    //    let two= document.getElementById("two");
+    //    let three= document.getElementById("three");
+    let hr= document.getElementById("hr");
+    let mint= document.getElementById("mint");
+    let sec= document.getElementById("sec");
+    let ms= document.getElementById("ms");
+    let btn1= document.getElementById("btn1");
+    let btn2= document.getElementById("btn2");
+    let btn3= document.getElementById("btn3");
+    
+    
+        //e params
+        //3000=3s
+        //it runs 1 time
+        // setTimeout(()=>{
+        // one.style.width="500px";
+        // },3000)
+        //to clear timeout
+        // let b=setTimeout(()=>{
+        // one.style.width="500px";
+        // },3000)
+        // two.addEventListener("click",()=>
+        // {
+        //     clearTimeout(b);
+        // })
+        //set interval every second it will repeat according to set time
+        // let a=0;
+        // setInterval(() => {
+        //         console.log(a++);
+        // }, 1000);
+        // let a=0;
+        // setInterval(() => {
+        //   a=a+10;
+        //   one.style.marginLeft=a+"px"; 
+
+        // }, 1000);
+        //counting in one second
+        // let a=0;
+        //    setInterval(()=>{
+        //    three.innerHTML=(a++);
+        //    },1000)
+        //span inline tag
+        //stop watch:
+        let mili=0;
+        let a= setInterval(()=>{
+           if(mili==60){
+            mili=1;
+           }
+           else{
+            ms.innerHTML=(mili++);
+           }
+           },1)
+        let second=0;
+         let b=  setInterval(()=>{
+           if(second==60){
+            second=1;
+           }
+           else{
+            sec.innerHTML=(second++);
+           }
+           },1000)
+           let minutes=1;
+        let c=   setInterval(()=>{
+            if(minutes==60){
+            minutes=0;
+           }
+           else{
+            mint.innerHTML=(minutes++);
+           }
+           },60000)
+           let hour=1;
+         let d=  setInterval(()=>{
+            if(hour==60){
+            hour=0;
+           }
+           else{
+            hr.innerHTML=(hour++);
+           }
+           },720000)
+         
+           btn2.addEventListener("click",()=>
+          {
+            clearInterval(b);
+            clearInterval(a);
+            clearInterval(c);
+            clearInterval(d);
+
+         })
+           
+         btn3.addEventListener("click",()=>
+          {
+         mint.innerText="00"
+         })    
+
+        
+
+
+    </script>
+</body>
+</html>

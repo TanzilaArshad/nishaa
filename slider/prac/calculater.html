@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <script>
+        var num1= prompt("Enter first number:");
+        var op = prompt("Enter operator:")
+        var num2 = prompt("Enter second number:");
+        var sum =num1 + num2;
+        var minus=num1 - num2;
+        var multiply=num1 * num2;
+        var division=num1 / num2;
+        var modulus=num1 % num2;
+        var square=num1 ** num2;
+        switch(op){
+            case '+':
+            document.write(sum);
+                break;
+                case '-':
+                document.write(minus);
+                break;
+                case '*':
+                document.write(multiply);
+                break;
+                case '/':
+                document.write(division);
+                break;
+                case '%':
+                document.write(modulus);
+                break;
+                case '**':
+                document.write(square);
+                break;
+               default:
+               document.write("nothing")
+                break;
+        }
+
+    </script>
+</body>
+</html>

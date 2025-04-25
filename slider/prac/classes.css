@@ -1,0 +1,23 @@
+/*selectors use for seudo elements. use to select the sepecfic part*/
+  .para::first-line{
+    background-color: red;
+    color: aqua;
+  }
+  .inp::placeholder{
+    color: blue;
+  }
+  ::selection{
+    background-color: rgb(93, 187, 156);
+
+  }
+  /*compulsory content this selector use when we give images to back of this*/
+.ddd::before{
+content: "hello";
+background-color: blueviolet;
+font-size: 50px;
+}
+.ddd::after{
+    content: "bye";
+    background-color: blueviolet;
+    font-size: 40px;
+    }

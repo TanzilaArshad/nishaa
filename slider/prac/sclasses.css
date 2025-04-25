@@ -1,0 +1,14 @@
+/*seudo elwements*/
+a:link{
+    color: #FF0000;
+}
+a:visited{
+    color: #00FF00;
+}
+a:hover{
+    color: blueviolet;
+}
+/*on click changes*/
+a:active{
+    color: aquamarine;
+}
